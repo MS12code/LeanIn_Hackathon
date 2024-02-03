@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!-- Design by foolishdeveloper.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Smart Home Energy Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <style media="screen">
+      body{
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      header {
+        text-align: center;
+        padding: 10px;
+        background-color: #3498db;
+        color: white;
+        font-size: 24px;
+      }
+      section {
+        margin: 20px 0;
+      }
+      h2 {
+        color: #3498db;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      footer {
+        text-align: center;
+        margin-top: 50px;
+        padding: 10px;
+        background-color: #3498db;
+        color: white;
+      }
+
+      /* Your existing slider styles */
+      .slider {
+        width: 600px;
+        height: 350px;
+        border: 7px solid white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+        margin: 0 auto;
+      }
+
+      .slides {
+        width: 500%;
+        height: 350px;
+        display: flex;
+      }
+
+      .slides input {
+        display: none;
+      }
+
+      .slide {
+        width: 20%;
+        transition: 2s;
+      }
+
+      .slide img {
+        width: 600px;
+        height: 350px;
+      }
+
+      .navigation-manual,
+      .navigation-auto {
+        position: absolute;
+        display: flex;
+        width: 600px;
+        justify-content: center;
+        margin-top: 460px;
+      }
+
+      .manual-btn,
+      .auto-btn1,
+      .auto-btn2,
+      .auto-btn3,
+      .auto-btn4 {
+        border: 3px solid white;
+        padding: 5px;
+        width: 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+      }
+
+      .manual-btn:not(:last-child),
+      .auto-btn1:not(:last-child),
+      .auto-btn2:not(:last-child),
+      .auto-btn3:not(:last-child),
+      .auto-btn4:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      .manual-btn:hover,
+      .auto-btn1:hover,
+      .auto-btn2:hover,
+      .auto-btn3:hover,
+      .auto-btn4:hover {
+        background: #c43af3;
+      }
+
+      #radio1:checked ~ .first {
+        margin-left: 0;
+      }
+
+      #radio2:checked ~ .first {
+        margin-left: -20%;
+      }
+
+      #radio3:checked ~ .first {
+        margin-left: -40%;
+      }
+
+      #radio4:checked ~ .first {
+        margin-left: -60%;
+      }
+
+      #radio1:checked ~ .navigation-auto .auto-btn1,
+      #radio2:checked ~ .navigation-auto .auto-btn2,
+      #radio3:checked ~ .navigation-auto .auto-btn3,
+      #radio4:checked ~ .navigation-auto .auto-btn4 {
+        background: #c43af3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      Smart Home Energy Management System
+    </header>
+
+    <section>
+      <h2>Welcome to Our Smart Home Energy Management System: Transforming Homes, Empowering Lives</h2>
+      <p>Real-time monitoring of energy consumption in your smart home.</p>
+      <!-- Placeholder for real-time energy data -->
+    </section>
+
+    <section>
+      <h2>Energy Optimization</h2>
+      <p>Machine learning algorithms predict usage patterns and suggest energy-saving measures.</p>
+      <!-- Placeholder for optimization suggestions -->
+    </section>
+
+    <section>
+      <h2>Connected Devices</h2>
+      <ul>
+        <li>Smart Thermostat</li>
+        <li>Smart Lighting</li>
+        <li>Smart Appliances</li>
+        <!-- Placeholder for additional connected devices -->
+      </ul>
+    </section>
+
+    <section>
+      <h2>Join Us in Building a Smarter, Greener Future!</h2>
+      <p>Ready to embark on a journey towards a smarter, more energy-efficient home? Join us at and experience the future of intelligent living. Embrace sustainability, save costs, and enjoy the comfort of a home that adapts to your needs. Let's make every home a smart home!</p>
+      <!-- Example image tag with the provided URL -->
+      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.pinterest.com%2Fpin%2Fhouse-wiring--627970741775903446%2F&psig=AOvVaw3wLfW4452KxNuwc-Io4hjm&ust=1707071518854000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIip9Y3nj4QDFQAAAAAdAAAAABBP" alt="Example Image">
+    </section>
+
+    <body>
+        <section class="home">
+          <div class="description">
+            <h1 class="title">
+              <span class="gradient-text">Grow Professionally</span> with the Best
+            </h1>
+            <p class="paragraph">
+              In a world filled with opportunities, having a mentor can make all the
+              difference. Explore why people turn to this invaluable resource to
+              unlock their potential.
+            </p>
+            <form id="form" autocomplete="off">
+              <input type="email" id="email-id" name="email_address" aria-label="email adress" placeholder="" required oninput="checkEmpty()" />
+              <button type="submit" class="btn" aria-label="submit">
+                <span>Subscribe</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </button>
+            </form>
+          </div>
+      
+          <div class="users-color-container">
+            <span class="item" style="--i: 1"></span>
+            <img class="item" src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/274f29ce-0d3f-4ac2-a2aa-f9b7bd188b2a" style="--i: 2" alt="" />
+            <span class="item" style="--i: 3"></span>
+            <img class="item" src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/b8a14493-3d9f-4b9b-b93a-56d0bc7243e9" style="--i: 4" alt="" />
+      
+            <img class="item" src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/03e51e1e-9750-45a5-b75e-a1e341d4562a" style="--i: 10" alt="" />
+            <span class="item" style="--i: 11"></span>
+            <img class="item" src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/5eb50f89-3e5a-480e-860c-8d40d3ba9ffe" style="--i: 12" alt="" />
+            <span class="item" style="--i: 5"></span>
+      
+            <span class="item" style="--i: 9"></span>
+            <img class="item" src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/86c71a79-2efe-4567-8665-b1e5a1fd9735" style="--i: 8" alt="" />
+            <span class="item" style="--i: 7"></span>
+            <img class="item" src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/97ef9643-5202-41aa-80f0-ceeabccdd099" style="--i: 6" alt="" />
+          </div>
+        </section>
+      
+        <section class="card-container" id="card-container">
+          <div class="slider">
+            <div class="card" data-tilt>
+              <div class="content">
+                <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/10088b1a-c0aa-42a9-8dff-1a692eb597d6" alt="" />
+                <h1>Personalized Guidance</h1>
+                <p>
+                  Whether you are pursuing a career change, entrepreneurship, or
+                  personal development, a mentor offers substantial advice and
+                  support to navigate your unique path.
+                </p>
+                <button class="btn btn-grad">
+                  <span>Learn More</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+      
+            <div class="card" data-tilt>
+              <div class="content">
+                <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/69fb8584-66a0-4ecd-bae5-dd00015a1ad5" alt="" />
+                <h1>Accelerated Growth</h1>
+                <p>
+                  With a mentor, you can fast-track your journey to success. Benefit
+                  from their experience and tap into their knowledge, helping you
+                  avoid common pitfalls.
+                </p>
+                <button class="btn btn-grad">
+                  <span>Learn More</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+      
+            <div class="card" data-tilt>
+              <div class="content">
+                <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/d49bdb0f-c717-4063-abe4-869cb3bc8b4e" alt="" />
+                <h1>Inspiration & Motivation</h1>
+                <p>
+                  A mentor isn't just an advisor; they are a source of inspiration
+                  and motivation. They can help you to set and achieve ambitious
+                  goals and gain your self-confident.
+                </p>
+                <button class="btn btn-grad">
+                  <span>Learn More</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+      
+            <div class="card" data-tilt>
+              <div class="content">
+                <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/fd1d57e3-de8a-438a-9e9a-952ae65a776e" alt="" />
+                <h1>Networking & Connections</h1>
+                <p>
+                  Your mentor can open doors to valuable connections and
+                  opportunities. They can introduce you to their network and help
+                  you build meaningful relationships.
+                </p>
+                <button class="btn btn-grad">
+                  <span>Learn More</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+      
+            <div class="card" data-tilt>
+              <div class="content">
+                <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/331836c0-0d28-48d1-a1c2-b5f5db87fe17" alt="" />
+                <h1>Expert Insights</h1>
+                <p>
+                  Gain access to industry insights and expert knowledge that you
+                  won't find in textbooks. Your mentor can provide practical wisdom
+                  that textbooks can't teach.
+                </p>
+                <button class="btn btn-grad">
+                  <span>Learn More</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+      
+            <div class="card" data-tilt>
+              <div class="content">
+                <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/2d022825-47f9-4e6a-bc97-14b47dc3242f" alt="" />
+                <h1>Confidence & Self-Esteem</h1>
+                <p>
+                  A mentor is like a supportive coach, boosting your confidence and
+                  self-esteem. Their encouragement can help you believe in your
+                  potential and take on challenges with vigor.
+                </p>
+                <button class="btn btn-grad">
+                  <span>Learn More</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+      
+          <ul class="control" id="custom-control">
+            <li class="prev">
+              <ion-icon class="arrow" name="caret-back-outline"></ion-icon>
+            </li>
+            <li class="next">
+              <ion-icon class="arrow" name="caret-forward-outline"></ion-icon>
+            </li>
+          </ul>
+        </section>
+      </body>
+      
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://wallpaperaccess.com/full/1154341.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--
+
+
+    
