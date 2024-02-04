@@ -1,444 +1,60 @@
 <!DOCTYPE html>
-<!-- Design by foolishdeveloper.com -->
+
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>Smart Home Energy Management System</title>
-    <link rel="stylesheet" href="style.css">
-    <style media="screen">
-      body{
-        font-family: Arial, sans-serif;
-        margin: 20px;
-      }
-      header {
-        text-align: center;
-        padding: 10px;
-        background-color: #3498db;
-        color: white;
-        font-size: 24px;
-      }
-      section {
-        margin: 20px 0;
-      }
-      h2 {
-        color: #3498db;
-      }
-      ul {
-        list-style-type: none;
-        padding: 0;
-      }
-      li {
-        margin-bottom: 10px;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-      footer {
-        text-align: center;
-        margin-top: 50px;
-        padding: 10px;
-        background-color: #3498db;
-        color: rgb(255, 255, 255);
-      }
+    <title><h1>Smart Home Energy Management System</h1></title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
 
-      /* Your existing slider styles */
-      .slider {
-        width: 600px;
-        height: 350px;
-        border: 7px solid white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-        margin: 0 auto;
-      }
+<nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#energy-optimization">Energy Optimization</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
 
-      .slides {
-        width: 500%;
-        height: 350px;
-        display: flex;
-      }
-
-      .slides input {
-        display: none;
-      }
-
-      .slide {
-        width: 20%;
-        transition: 2s;
-      }
-
-      .slide img {
-        width: 600px;
-        height: 350px;
-      }
-
-      .navigation-manual,
-      .navigation-auto {
-        position: absolute;
-        display: flex;
-        width: 600px;
-        justify-content: center;
-        margin-top: 460px;
-      }
-
-      .manual-btn,
-      .auto-btn1,
-      .auto-btn2,
-      .auto-btn3,
-      .auto-btn4 {
-        border: 3px solid white;
-        padding: 5px;
-        width: 30px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 1s;
-      }
-
-      .manual-btn:not(:last-child),
-      .auto-btn1:not(:last-child),
-      .auto-btn2:not(:last-child),
-      .auto-btn3:not(:last-child),
-      .auto-btn4:not(:last-child) {
-        margin-right: 40px;
-      }
-
-      .manual-btn:hover,
-      .auto-btn1:hover,
-      .auto-btn2:hover,
-      .auto-btn3:hover,
-      .auto-btn4:hover {
-        background: #c43af3;
-      }
-
-      #radio1:checked ~ .first {
-        margin-left: 0;
-      }
-
-      #radio2:checked ~ .first {
-        margin-left: -20%;
-      }
-
-      #radio3:checked ~ .first {
-        margin-left: -40%;
-      }
-
-      #radio4:checked ~ .first {
-        margin-left: -60%;
-      }
-
-      #radio1:checked ~ .navigation-auto .auto-btn1,
-      #radio2:checked ~ .navigation-auto .auto-btn2,
-      #radio3:checked ~ .navigation-auto .auto-btn3,
-      #radio4:checked ~ .navigation-auto .auto-btn4 {
-        background: #c43af3;
-      }
-
-
-      body {
-  background-color: #F7F4E9;
-  font-family: sans-serif;
-}
-
-section {
-  margin-top: 2rem;
-  width: 100%;
+<header>
+  <h1>
+    Smart Home Energy Management System
+  </h1>
   
-  #chart-wrap {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    justify-content: center;
-    margin: auto;
-    max-width: 500px;
-    position: relative;
-    width: 100%;
+</header>
+
+<section>
+    <h2>Welcome to Our Smart Home Energy Management System: Transforming Homes, Empowering Lives</h2>
+    <p>Real-time monitoring of energy consumption in your smart home.</p>
+   
+</section>
+
+<section id="energy-optimization">
+    <h2>Energy Optimization</h2>
+    <p>Machine learning algorithms predict usage patterns and suggest energy-saving measures.</p>
     
-    .chart-tooltip {
-       margin-left: 15px;
-       position: absolute;
-       z-index: 10;
-       
-       .chart-tooltip-wrap {
-          background-color: #181818;
-          border-radius: 10px;
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
-          display: block;
-          padding: .875rem;
+</section>
 
-          p {
-           color: #140c7a;
-           font-size: .875rem;
-           line-height: 1.75;
-           margin: 0;
-         }
-       }
-      }
-    
-    @media (max-width: 479px) {
-      flex-direction: column;
-    }
-    
-    svg {
-        margin: auto;
-      
-       .text {
-        fill: #fff;
-        font-size: .875rem;
-        text-anchor: middle;
-      }
-    }
-    
-    .legend {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      justify-content: center;
-      margin: 2rem auto;
-      
-      @media (max-width: 479px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-
-      .legend-group {
-        align-items: center;
-        display: flex;
-        flex: 1;
-        flex-direction: row;
-        gap: 8px;
-        justify-content: flex-start;
-        
-        @media (max-width: 479px) {
-          flex-basis: 100px;
-        }
-        
-        .legend-box {
-          height: 20px;
-          margin: 0;
-          width: 20px;
-        }
-        
-        .legend-label {
-          margin: 0;
-        }
-      }
-    }
-  }
-}
-
-    </style>
-  </head>
-  <body>
-    <header>
-      Smart Home Energy Management System
-    </header>
-
-    <section>
-      <h2>Welcome to Our Smart Home Energy Management System: Transforming Homes, Empowering Lives</h2>
-      <p>Real-time monitoring of energy consumption in your smart home.</p>
-      <!-- Placeholder for real-time energy data -->
-    </section>
-
-    <section>
-      <h2>Energy Optimization</h2>
-      <p>Machine learning algorithms predict usage patterns and suggest energy-saving measures.</p>
-      <!-- Placeholder for optimization suggestions -->
-    </section>
-
-    <section>
-      <h2>Connected Devices</h2>
-      <ul>
+<section id="connected-devices">
+    <h2>Connected Devices</h2>
+    <ul>
         <li>Smart Thermostat</li>
         <li>Smart Lighting</li>
         <li>Smart Appliances</li>
-        <!-- Placeholder for additional connected devices -->
-      </ul>
-    </section>
+     
+    </ul>
+</section> 
 
-    <section>
-      <h2>Join Us in Building a Smarter, Greener Future!</h2>
-      <p>Ready to embark on a journey towards a smarter, more energy-efficient home? Join us at and experience the future of intelligent living. Embrace sustainability, save costs, and enjoy the comfort of a home that adapts to your needs. Let's make every home a smart home!</p>
-      <!-- Example image tag with the provided URL -->
-      <img src="https://img.freepik.com/premium-photo/modern-smart-home-management-system-using-augmented_901075-2322.jpg" style="width: 50%; height: auto;" alt="Example Image">
+<script src="script.js"></script>
+
+<section id="join-us">
+    <h2>Join Us in Building a Smarter, Greener Future!</h2>
+    <p>Ready to embark on a journey towards a smarter, more energy-efficient home? Join us at and experience the future of intelligent living. Embrace sustainability, save costs, and enjoy the comfort of a home that adapts to your needs. Let's make every home a smart home!</p>
+    
+    <img src="https://img.freepik.com/premium-photo/modern-smart-home-management-system-using-augmented_901075-2322.jpg" class="center" alt="Example Image">
 </section>
-    <body>
-        <section class="home">
-          <div class="description">
-            <h1 class="title">
-              <span class="gradient-text">Automated, Secure, Efficient, Connected</span> 
-            </h1>
-            <p class="paragraph">
-                Incorporating cutting-edge technology, the Smart Home Management System revolutionizes daily living. Seamlessly integrating devices and optimizing energy usage, it offers unparalleled comfort, security, and sustainability. Embrace the future of intelligent living with this innovative system that adapts to your needs, making every moment at home smarter and more enjoyable.
-            </p>
-            <form id="form" autocomplete="off">
-              <input type="email" id="email-id" name="email_address" aria-label="email adress" placeholder="" required oninput="checkEmpty()" />
-              <button type="submit" class="btn" aria-label="submit">
-                <span>Subscribe</span>
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-              </button>
-            </form>
-          </div>
-      
-          <div class="users-color-container">
-            <span class="item" style="--i: 1"></span>
-            <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbwKUCUojOOBUK-UYIVu7QPENnTlR_Huqf7Q&usqp=CAU" style="--i: 2" alt="" />
-            <span class="item" style="--i: 3"></span>
-            <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlmCaCpnw1dmeZc8tSyzm8BDtLiPlofghHJg&usqp=CAU" style="--i: 4" alt="" />
-      
-            <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkeUJGOqpXuqSMlPVETAve5yoZ5-43JWBfLw&usqp=CAU" style="--i: 10" alt="" />
-            <span class="item" style="--i: 11"></span>
-            <img class="item" src="https://5.imimg.com/data5/UB/EB/MY-13734897/homelynx-smart-home-management-system-500x500.png" style="--i: 12" alt="" />
-            <span class="item" style="--i: 5"></span>
-      
-            <span class="item" style="--i: 9"></span>
-            <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd1csdn9CeW36hq_XDg_L5Qr3d14GCBloqKQ&usqp=CAU" style="--i: 8" alt="" />
-            <span class="item" style="--i: 7"></span>
-            <img class="item" src="data:image/jpeg;base64,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" style="--i: 6" alt="" />
-          </div>
-        </section>
-      
-        <section class="card-container" id="card-container">
-          <div class="slider">
-            <div class="card" data-tilt>
-              <div class="content">
-                <img src="https://www.researchgate.net/publication/349412116/figure/fig5/AS:992616808198149@1613669697388/Pie-chart-of-household-energy-consumption-by-appliance-Souce.png" alt="Pie Chart">
-                <h1>Energy Consumption Chart</h1>
-                <p>
-          
-                </p>
-                <button class="btn btn-grad">
-                  <span>Learn More</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-      
-            <div class="card" data-tilt>
-              <div class="content">
-                <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/69fb8584-66a0-4ecd-bae5-dd00015a1ad5" alt="" />
-                <h1>Accelerated Growth</h1>
-                <p>
-                  
-                </p>
-                <button class="btn btn-grad">
-                  <span>Learn More</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-      
-            <div class="card" data-tilt>
-              <div class="content">
-                <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/d49bdb0f-c717-4063-abe4-869cb3bc8b4e" alt="" />
-                <h1>Inspiration & Motivation</h1>
-                <p>
-                  A mentor isn't just an advisor; they are a source of inspiration
-                  and motivation. They can help you to set and achieve ambitious
-                  goals and gain your self-confident.
-                </p>
-                <button class="btn btn-grad">
-                  <span>Learn More</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-      
-            <div class="card" data-tilt>
-              <div class="content">
-                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FSystem-Architecture-for-Smart-Home-Management-System_fig1_236596917&psig=AOvVaw1ZtleJLQKOnGybq3bP4Zwj&ust=1707107199919000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLjugoTskIQDFQAAAAAdAAAAABAE" alt="img" />
-                <h1></h1>
-                <p>
-                  Your mentor can open doors to valuable connections and
-                  opportunities. They can introduce you to their network and help
-                  you build meaningful relationships.
-                </p>
-                <button class="btn btn-grad">
-                  <span>Learn More</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-      
-            <div class="card" data-tilt>
-              <div class="content">
-                <img src="https://www.zdnet.com/a/img/resize/d4041f94faf7cc02c4ade9b88ee1d51914ae01de/2023/04/14/45fe8ade-ffaf-43ae-b36b-1071e1afcd94/apple-homekit.jpg?auto=webp&fit=crop&height=900&width=1200" alt="" />
-                <h1>Expert Insights</h1>
-                <p>
-                  Gain access to industry insights and expert knowledge that you
-                  won't find in textbooks. Your mentor can provide practical wisdom
-                  that textbooks can't teach.
-                </p>
-                <button class="btn btn-grad">
-                  <span>Learn More</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-      
-            <div class="card" data-tilt>
-              <div class="content">
-                <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/2d022825-47f9-4e6a-bc97-14b47dc3242f" alt="" />
-                <h1>Confidence & Self-Esteem</h1>
-                <p>
-                  A mentor is like a supportive coach, boosting your confidence and
-                  self-esteem. Their encouragement can help you believe in your
-                  potential and take on challenges with vigor.
-                </p>
-                <button class="btn btn-grad">
-                  <span>Learn More</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-          </div>
-      
-          <ul class="control" id="custom-control">
-            <li class="prev">
-              <ion-icon class="arrow" name="caret-back-outline"></ion-icon>
-            </li>
-            <li class="next">
-              <ion-icon class="arrow" name="caret-forward-outline"></ion-icon>
-            </li>
-          </ul>
-        </section>
-      </body>
-      
-    <!--image slider start-->
-    <div class="slider">
-      <div class="slides">
-        <!--radio buttons start-->
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <!--radio buttons end-->
-        <!--slide images start-->
-        <div class="slide first">
-          <img src="" alt="">
-        </div>
-        <div class="slide">
-          <img src="https://wallpaperaccess.com/full/1154341.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg" alt="">
-        </div>
-        <div class="slide">
-          <img src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg" alt="">
-        </div>
 
-        
-            <section>
-                <div id="chart-wrap"></div>
-              </section>
 
-              
-         
-        <!--slide images end-->
-        <!--automatic navigation start-->
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-          <div class="auto-btn4"></div>
-        </div>
+
+</body>
+</html>
